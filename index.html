@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Studio — Web Apps, AI &amp; 3D Games</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    html.dark body { background-color: #090d16; color: #e2e8f0; }
+    html.dark nav, html.dark .card-surface { background-color: #111827 !important; border-color: #1f2937 !important; }
+    html.dark .text-slate-900, html.dark .text-slate-800 { color: #f8fafc !important; }
+    html.dark .text-slate-600, html.dark .text-slate-500 { color: #94a3b8 !important; }
+    html.dark input, html.dark select, html.dark textarea { background-color: #090d16 !important; color: #f8fafc !important; border-color: #374151 !important; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+  <!-- Top Navigation -->
+  <nav class="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-200 px-4 py-3">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-3">
+      <a href="#top" class="flex items-center gap-2 font-extrabold text-base text-slate-900">
+        <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white text-xs">A</span>
+        Aditya Studio
+      </a>
+      <div class="flex items-center gap-2 sm:gap-4 text-xs sm:text-sm font-semibold">
+        <a href="#projects" class="text-slate-600 hover:text-indigo-600 transition-colors">Projects</a>
+        <a href="#services" class="text-slate-600 hover:text-indigo-600 transition-colors">Services</a>
+        <a href="#request" class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1.5 rounded-lg transition-colors">Request</a>
+        <button id="btn-theme" type="button"
+          class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:border-indigo-400 transition-colors">
+          Dark
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="top" class="max-w-5xl w-full mx-auto px-4 pt-10 pb-8 sm:pt-14 sm:pb-12 text-center space-y-4">
+    <span class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 text-xs font-bold">
+      Mobile-First Web Apps · AI Tools · 3D Games
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+      Fast, Interactive Websites &amp; Apps Built to Work on Every Phone
+    </h1>
+    <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-600 leading-relaxed">
+      I build clean, installable web apps, AI assistants, digital event invites, and 3D browser games—no app store downloads required.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3 pt-2">
+      <a href="#projects" class="px-5 py-2.5 rounded-xl bg-slate-900 text-white text-sm font-bold hover:opacity-90 transition-opacity">
+        Try Live Demos
+      </a>
+      <a href="#request" class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white text-sm font-bold hover:bg-indigo-700 transition-colors">
+        Request a Project
+      </a>
+    </div>
+  </header>
+
+  <!-- Live Projects Showcase -->
+  <section id="projects" class="max-w-5xl w-full mx-auto px-4 py-8 space-y-5">
+    <div>
+      <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">Live Projects</h2>
+      <p class="text-xs sm:text-sm text-slate-500">Tap any project below to test it right in your browser.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Project 1: AI Chatbot -->
+      <article class="card-surface bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between shadow-sm space-y-4">
+        <div class="space-y-2">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-indigo-600 via-violet-600 to-cyan-500 flex items-center justify-center text-white font-extrabold text-lg">
+            AI Chatbot PWA
+          </div>
+          <h3 class="text-base font-bold text-slate-900">Cloud-Synced AI Assistant</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Installable PWA with Google &amp; Email login, Cloud Firestore sync, Guest Mode, Dark Mode, offline assistant, and Gemini API support.
+          </p>
+        </div>
+        <a href="https://adityanarsinghmehra-debug.github.io/aditya-ai-chatbot/" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center w-full py-2 rounded-xl bg-indigo-50 text-indigo-700 hover:bg-indigo-100 text-xs font-bold transition-colors">
+          Open Live Chatbot →
+        </a>
+      </article>
+
+      <!-- Project 2: 3D Car Racing -->
+      <article class="card-surface bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between shadow-sm space-y-4">
+        <div class="space-y-2">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-slate-900 via-fuchsia-700 to-cyan-500 flex items-center justify-center text-white font-extrabold text-lg">
+            Neon Rush 3D
+          </div>
+          <h3 class="text-base font-bold text-slate-900">3D Highway Car Racer</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Real-time Three.js WebGL 3D racing game with traffic dodging, Nitro boost flames, mobile touch steering, and synthesized sound effects.
+          </p>
+        </div>
+        <a href="https://adityanarsinghmehra-debug.github.io/3d-car-racing-game-/" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center w-full py-2 rounded-xl bg-indigo-50 text-indigo-700 hover:bg-indigo-100 text-xs font-bold transition-colors">
+          Play 3D Game →
+        </a>
+      </article>
+
+      <!-- Project 3: Cosmic Particle Lab -->
+      <article class="card-surface bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between shadow-sm space-y-4">
+        <div class="space-y-2">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-indigo-950 via-purple-700 to-emerald-500 flex items-center justify-center text-white font-extrabold text-lg">
+            Cosmic Particle Lab
+          </div>
+          <h3 class="text-base font-bold text-slate-900">3D Gravity &amp; Physics Sandbox</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Interactive 4,000-particle 3D WebGL simulation with Vortex, Black Hole, Repulse, and Fireworks touch physics.
+          </p>
+        </div>
+        <a href="#request" data-service="Interactive Quiz or Mini-Game"
+          class="service-pick inline-flex items-center justify-center w-full py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs font-bold transition-colors">
+          Request Similar App →
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="max-w-5xl w-full mx-auto px-4 py-8 space-y-5">
+    <div>
+      <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">What I Can Build For You</h2>
+      <p class="text-xs sm:text-sm text-slate-500">Fast turnaround, mobile-ready design, and free HTTPS hosting setup.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="card-surface bg-white rounded-2xl border border-slate-200 p-5 space-y-3">
+        <div class="text-xs font-extrabold uppercase tracking-wider text-indigo-600">Starter Website</div>
+        <h3 class="text-base font-bold text-slate-900">1-Page Business or Portfolio</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Clean landing page for a coaching class, shop, gym, or personal brand with mobile layout and Dark Mode.</p>
+        <button type="button" class="service-pick w-full py-2 rounded-xl border border-indigo-200 text-indigo-700 hover:bg-indigo-50 text-xs font-bold transition-colors" data-service="1-Page Business or Portfolio">
+          Request This
+        </button>
+      </div>
+
+      <div class="card-surface bg-white rounded-2xl border border-slate-200 p-5 space-y-3">
+        <div class="text-xs font-extrabold uppercase tracking-wider text-fuchsia-600">Special Events</div>
+        <h3 class="text-base font-bold text-slate-900">Digital Wedding / Event Invite</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Shareable invitation webpage with countdown timer, event schedule, venue map link, and RSVP form.</p>
+        <button type="button" class="service-pick w-full py-2 rounded-xl border border-indigo-200 text-indigo-700 hover:bg-indigo-50 text-xs font-bold transition-colors" data-service="Digital Wedding or Event Invite">
+          Request This
+        </button>
+      </div>
+
+      <div class="card-surface bg-white rounded-2xl border border-slate-200 p-5 space-y-3">
+        <div class="text-xs font-extrabold uppercase tracking-wider text-cyan-600">Interactive</div>
+        <h3 class="text-base font-bold text-slate-900">Interactive Quiz or Mini-Game</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Custom study quiz app, brand promo game, or interactive web tool that works smoothly on any phone.</p>
+        <button type="button" class="service-pick w-full py-2 rounded-xl border border-indigo-200 text-indigo-700 hover:bg-indigo-50 text-xs font-bold transition-colors" data-service="Interactive Quiz or Mini-Game">
+          Request This
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple 3-Step Process -->
+  <section class="max-w-5xl w-full mx-auto px-4 py-6">
+    <div class="card-surface bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
+      <h2 class="text-base sm:text-lg font-extrabold text-slate-900 mb-4">How It Works</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 card-surface">
+          <span class="inline-block font-extrabold text-indigo-600 mb-1">1. Share Your Idea</span>
+          <p class="text-slate-600 leading-relaxed">Fill out the quick request form below with your name, contact, and what you want built.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 card-surface">
+          <span class="inline-block font-extrabold text-indigo-600 mb-1">2. Fast Preview</span>
+          <p class="text-slate-600 leading-relaxed">I design a clean, mobile-first version you can test right on your own phone.</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 card-surface">
+          <span class="inline-block font-extrabold text-indigo-600 mb-1">3. Go Live</span>
+          <p class="text-slate-600 leading-relaxed">Your website or mini-app goes live with a shareable HTTPS link ready for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Google Form Project Request Section -->
+  <section id="request" class="max-w-3xl w-full mx-auto px-4 py-8 pb-14">
+    <div class="card-surface bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="text-xl font-extrabold text-slate-900">Send a Project Request</h2>
+          <p class="text-xs sm:text-sm text-slate-500">Fill out the form below—your request goes straight to my inbox.</p>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeuztRmuNMkUrP3-uu6QqC53BTMNzFKfY_8FMCBcUxE8zMkQ/viewform" target="_blank" rel="noopener"
+          class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold transition-colors shrink-0">
+          Open Form in New Tab →
+        </a>
+      </div>
+
+      <div class="rounded-xl overflow-hidden border border-slate-200 bg-white">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfeuztRmuNMkUrP3-uu6QqC53BTMNzFKfY_8FMCBcUxE8zMkQ/viewform?embedded=true"
+          title="Project Request Form"
+          class="w-full h-[640px] border-0"
+          loading="lazy">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-auto border-t border-slate-200 py-5 text-center text-xs text-slate-500">
+    Aditya Studio · Built with HTML, Tailwind CSS &amp; Three.js
+  </footer>
+
+  <script>
+    // Dark/Light Mode toggle with localStorage persistence
+    const btnTheme = document.getElementById("btn-theme");
+    function setTheme(dark) {
+      document.documentElement.classList.toggle("dark", dark);
+      btnTheme.textContent = dark ? "Light" : "Dark";
+      try { localStorage.setItem("portfolio_theme_v1", dark ? "dark" : "light"); } catch (e) {}
+    }
+    try {
+      if (localStorage.getItem("portfolio_theme_v1") === "dark") setTheme(true);
+    } catch (e) {}
+    btnTheme.addEventListener("click", () => {
+      setTheme(!document.documentElement.classList.contains("dark"));
+    });
+
+    // Service buttons smoothly scroll to the embedded request form
+    document.querySelectorAll(".service-pick").forEach(el => {
+      el.addEventListener("click", () => {
+        document.getElementById("request").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
